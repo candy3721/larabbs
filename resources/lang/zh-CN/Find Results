@@ -1,0 +1,894 @@
+Searching 22311 files for "/home"
+
+E:\homestead\code\larabbs\yarn-error.log:
+    3  
+    4  PATH: 
+    5:   /home/vagrant/.composer/vendor/bin:/usr/local/go/bin:/home/vagrant/.rbenv/plugins/ruby-build/bin:/home/vagrant/.rbenv/shims:/home/vagrant/.rbenv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/vagrant/.dotnet/tools
+    6  
+    7  Yarn version: 
+    .
+   15  
+   16  Trace: 
+   17:   Error: EPROTO: protocol error, symlink '../../../parser/bin/babel-parser.js' -> '/home/vagrant/code/larabbs/node_modules/@babel/core/node_modules/.bin/parser'
+   18  
+   19  npm manifest: 
+   ..
+ 3151    homedir-polyfill@^1.0.1:
+ 3152      version "1.0.3"
+ 3153:     resolved "https://registry.npm.taobao.org/homedir-polyfill/download/homedir-polyfill-1.0.3.tgz#743298cef4e5af3e194161fbadcc2151d3a058e8"
+ 3154      integrity sha1-dDKYzvTlrz4ZQWH7rcwhUdOgWOg=
+ 3155      dependencies:
+
+E:\homestead\code\larabbs\yarn.lock:
+ 3100  homedir-polyfill@^1.0.1:
+ 3101    version "1.0.3"
+ 3102:   resolved "https://registry.npm.taobao.org/homedir-polyfill/download/homedir-polyfill-1.0.3.tgz#743298cef4e5af3e194161fbadcc2151d3a058e8"
+ 3103    integrity sha1-dDKYzvTlrz4ZQWH7rcwhUdOgWOg=
+ 3104    dependencies:
+
+E:\homestead\code\larabbs\app\Http\Controllers\Auth\LoginController.php:
+   26       * @var string
+   27       */
+   28:     protected $redirectTo = '/';
+   29  
+   30      /**
+
+E:\homestead\code\larabbs\app\Http\Controllers\Auth\RegisterController.php:
+   29       * @var string
+   30       */
+   31:     protected $redirectTo = '/';
+   32  
+   33      /**
+
+E:\homestead\code\larabbs\app\Http\Controllers\Auth\ResetPasswordController.php:
+   26       * @var string
+   27       */
+   28:     protected $redirectTo = '/';
+   29  
+   30      /**
+
+E:\homestead\code\larabbs\app\Http\Controllers\Auth\VerificationController.php:
+   26       * @var string
+   27       */
+   28:     protected $redirectTo = '/';
+   29  
+   30      /**
+
+E:\homestead\code\larabbs\app\Http\Middleware\RedirectIfAuthenticated.php:
+   19      {
+   20          if (Auth::guard($guard)->check()) {
+   21:             return redirect('/');
+   22          }
+   23  
+
+E:\homestead\code\larabbs\node_modules\@babel\preset-env\yarn-error.log:
+    1  Arguments: 
+    2:   /home/nicolo/.nvm/versions/node/v11.14.0/bin/node /usr/share/yarn/bin/yarn.js install --mutex network:42424 --non-interactive --no-lockfile
+    3  
+    4  PATH: 
+    5:   /home/nicolo/Documenti/dev/babel/babel/packages/babel-preset-env/node_modules/.bin:/home/nicolo/Documenti/dev/babel/babel/packages/node_modules/.bin:/home/nicolo/Documenti/dev/babel/babel/node_modules/.bin:/home/nicolo/Documenti/dev/babel/node_modules/.bin:/home/nicolo/Documenti/dev/node_modules/.bin:/home/nicolo/Documenti/node_modules/.bin:/home/nicolo/node_modules/.bin:/home/node_modules/.bin:/node_modules/.bin:/home/nicolo/.nvm/versions/node/v11.14.0/bin:/tmp/yarn--1561643090353-0.782220323203699:/home/nicolo/Documenti/dev/babel/babel/node_modules/.bin:/home/nicolo/.config/yarn/link/node_modules/.bin:/home/nicolo/.yarn/bin:/home/nicolo/.nvm/versions/node/v11.14.0/libexec/lib/node_modules/npm/bin/node-gyp-bin:/home/nicolo/.nvm/versions/node/v11.14.0/lib/node_modules/npm/bin/node-gyp-bin:/home/nicolo/.nvm/versions/node/v11.14.0/bin/node_modules/npm/bin/node-gyp-bin:/usr/local/MATLAB/R2019b/bin:/home/nicolo/.jsvu:/home/nicolo/.nvm/versions/node/v11.14.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+    6  
+    7  Yarn version: 
+    .
+   15  
+   16  Trace: 
+   17:   Error: ENOENT: no such file or directory, copyfile '/home/nicolo/.cache/yarn/v4/npm-to-fast-properties-2.0.0-dc5e698cbd079265bc73e0377681a4e4e83f616e/node_modules/to-fast-properties/index.js' -> '/home/nicolo/Documenti/dev/babel/babel/packages/babel-preset-env/node_modules/@babel/types/node_modules/to-fast-properties/index.js'
+   18  
+   19  npm manifest: 
+
+E:\homestead\code\larabbs\node_modules\@types\node\path.d.ts:
+    9          root: string;
+   10          /**
+   11:          * The full directory path such as '/home/user/dir' or 'c:\path\dir'
+   12           */
+   13          dir: string;
+   ..
+   31          root?: string;
+   32          /**
+   33:          * The full directory path such as '/home/user/dir' or 'c:\path\dir'
+   34           */
+   35          dir?: string;
+
+E:\homestead\code\larabbs\node_modules\babel-merge\yarn.lock:
+ 1407  home-or-tmp@^3.0.0:
+ 1408    version "3.0.0"
+ 1409:   resolved "https://registry.yarnpkg.com/home-or-tmp/-/home-or-tmp-3.0.0.tgz#57a8fe24cf33cdd524860a15821ddc25c86671fb"
+ 1410  
+ 1411  hosted-git-info@^2.1.4:
+
+E:\homestead\code\larabbs\node_modules\browserify-zlib\yarn.lock:
+ 1860  home-or-tmp@^2.0.0:
+ 1861    version "2.0.0"
+ 1862:   resolved "https://registry.yarnpkg.com/home-or-tmp/-/home-or-tmp-2.0.0.tgz#e36c3f2d2cae7d746a857e38d18d5f32a7882db8"
+ 1863    dependencies:
+ 1864      os-homedir "^1.0.0"
+
+E:\homestead\code\larabbs\node_modules\css-loader\node_modules\postcss\lib\input.js:
+   69                   * @example
+   70                   * const root = postcss.parse(css, { from: 'a.css' });
+   71:                  * root.source.input.file //=> '/home/ai/a.css'
+   72                   */
+   73                  this.file = opts.from;
+   ..
+  175       * @example
+  176       * const root = postcss.parse(css, { from: 'a.css' });
+  177:      * root.source.input.from //=> "/home/ai/a.css"
+  178       *
+  179       * const root = postcss.parse(css);
+
+E:\homestead\code\larabbs\node_modules\css-loader\node_modules\postcss\lib\node.js:
+  565       *
+  566       * @example
+  567:      * decl.source.input.from //=> '/home/ai/a.sass'
+  568       * decl.source.start      //=> { line: 10, column: 2 }
+  569       * decl.source.end        //=> { line: 10, column: 12 }
+
+E:\homestead\code\larabbs\node_modules\homedir-polyfill\package.json:
+    3    "description": "Node.js os.homedir polyfill for older versions of node.js.",
+    4    "version": "1.0.3",
+    5:   "homepage": "https://github.com/doowb/homedir-polyfill",
+    6    "author": "Brian Woodward (https://github.com/doowb)",
+    7:   "repository": "doowb/homedir-polyfill",
+    8    "bugs": {
+    9:     "url": "https://github.com/doowb/homedir-polyfill/issues"
+   10    },
+   11    "license": "MIT",
+
+E:\homestead\code\larabbs\node_modules\homedir-polyfill\polyfill.js:
+   51    }
+   52  
+   53:   return '/home/' + user;
+   54  }
+   55  
+
+E:\homestead\code\larabbs\node_modules\homedir-polyfill\README.md:
+    1: # homedir-polyfill [![NPM version](https://img.shields.io/npm/v/homedir-polyfill.svg?style=flat)](https://www.npmjs.com/package/homedir-polyfill) [![NPM monthly downloads](https://img.shields.io/npm/dm/homedir-polyfill.svg?style=flat)](https://npmjs.org/package/homedir-polyfill) [![NPM total downloads](https://img.shields.io/npm/dt/homedir-polyfill.svg?style=flat)](https://npmjs.org/package/homedir-polyfill) [![Linux Build Status](https://img.shields.io/travis/doowb/homedir-polyfill.svg?style=flat&label=Travis)](https://travis-ci.org/doowb/homedir-polyfill) [![Windows Build Status](https://img.shields.io/appveyor/ci/doowb/homedir-polyfill.svg?style=flat&label=AppVeyor)](https://ci.appveyor.com/project/doowb/homedir-polyfill)
+    2  
+    3  > Node.js os.homedir polyfill for older versions of node.js.
+
+E:\homestead\code\larabbs\node_modules\icss-utils\node_modules\postcss\lib\input.js:
+   69                   * @example
+   70                   * const root = postcss.parse(css, { from: 'a.css' });
+   71:                  * root.source.input.file //=> '/home/ai/a.css'
+   72                   */
+   73                  this.file = opts.from;
+   ..
+  175       * @example
+  176       * const root = postcss.parse(css, { from: 'a.css' });
+  177:      * root.source.input.from //=> "/home/ai/a.css"
+  178       *
+  179       * const root = postcss.parse(css);
+
+E:\homestead\code\larabbs\node_modules\icss-utils\node_modules\postcss\lib\node.js:
+  565       *
+  566       * @example
+  567:      * decl.source.input.from //=> '/home/ai/a.sass'
+  568       * decl.source.start      //=> { line: 10, column: 2 }
+  569       * decl.source.end        //=> { line: 10, column: 12 }
+
+E:\homestead\code\larabbs\node_modules\imurmurhash\imurmurhash.js:
+    4   *
+    5   * @author <a href="mailto:jensyt@gmail.com">Jens Taylor</a>
+    6:  * @see http://github.com/homebrewing/brauhaus-diff
+    7   * @author <a href="mailto:gary.court@gmail.com">Gary Court</a>
+    8   * @see http://github.com/garycourt/murmurhash-js
+
+E:\homestead\code\larabbs\node_modules\imurmurhash\imurmurhash.min.js:
+    4   *
+    5   * @author <a href="mailto:jensyt@gmail.com">Jens Taylor</a>
+    6:  * @see http://github.com/homebrewing/brauhaus-diff
+    7   * @author <a href="mailto:gary.court@gmail.com">Gary Court</a>
+    8   * @see http://github.com/garycourt/murmurhash-js
+
+E:\homestead\code\larabbs\node_modules\imurmurhash\package.json:
+   28      "name": "Jens Taylor",
+   29      "email": "jensyt@gmail.com",
+   30:     "url": "https://github.com/homebrewing"
+   31    },
+   32    "license": "MIT",
+
+E:\homestead\code\larabbs\node_modules\js-yaml\README.md:
+   86  // Get document, or throw exception on error
+   87  try {
+   88:   var doc = yaml.safeLoad(fs.readFileSync('/home/ixti/example.yml', 'utf8'));
+   89    console.log(doc);
+   90  } catch (e) {
+
+E:\homestead\code\larabbs\node_modules\path-browserify\test\test-path.js:
+  363    assert.equal(path.isAbsolute('directory\\directory'), false);
+  364  } else {
+  365:   assert.equal(path.isAbsolute('/home/foo'), true);
+  366:   assert.equal(path.isAbsolute('/home/foo/..'), true);
+  367    assert.equal(path.isAbsolute('bar/'), false);
+  368    assert.equal(path.isAbsolute('./baz'), false);
+
+E:\homestead\code\larabbs\node_modules\path-dirname\readme.md:
+   17  const pathDirname = require('path-dirname');
+   18  
+   19: pathDirname('/home/foo');
+   20: //=> '/home'
+   21  pathDirname('C:\\Users\\foo');
+   22  //=> 'C:\\Users'
+
+E:\homestead\code\larabbs\node_modules\path-is-absolute\readme.md:
+   17  
+   18  // Running on Linux
+   19: pathIsAbsolute('/home/foo');
+   20  //=> true
+   21  pathIsAbsolute('C:/Users/foo');
+   ..
+   25  pathIsAbsolute('C:/Users/foo');
+   26  //=> true
+   27: pathIsAbsolute('/home/foo');
+   28  //=> false
+   29  
+   30  // Running on any OS
+   31: pathIsAbsolute.posix('/home/foo');
+   32  //=> true
+   33  pathIsAbsolute.posix('C:/Users/foo');
+   ..
+   35  pathIsAbsolute.win32('C:/Users/foo');
+   36  //=> true
+   37: pathIsAbsolute.win32('/home/foo');
+   38  //=> false
+   39  ```
+
+E:\homestead\code\larabbs\node_modules\path-parse\README.md:
+   14  var pathParse = require('path-parse');
+   15  
+   16: pathParse('/home/user/dir/file.txt');
+   17  //=> {
+   18  //       root : "/",
+   19: //       dir : "/home/user/dir",
+   20  //       base : "file.txt",
+   21  //       ext : ".txt",
+
+E:\homestead\code\larabbs\node_modules\path-parse\test.js:
+   24  
+   25  var unixParseTests = [
+   26:   [{ root: '/', dir: '/home/user/dir', base: 'file.txt', ext: '.txt', name: 'file' }, '/home/user/dir/file.txt'],
+   27:   [{ root: '/', dir: '/home/user/a dir', base: 'another File.zip', ext: '.zip', name: 'another File' }, '/home/user/a dir/another File.zip'],
+   28:   [{ root: '/', dir: '/home/user/a dir/', base: 'another&File.', ext: '.', name: 'another&File' }, '/home/user/a dir//another&File.'],
+   29:   [{ root: '/', dir: '/home/user/a$$$dir/', base: 'another File.zip', ext: '.zip', name: 'another File' }, '/home/user/a$$$dir//another File.zip'],
+   30    [{ root: '', dir: 'user/dir', base: 'another File.zip', ext: '.zip', name: 'another File' }, 'user/dir/another File.zip'],
+   31    [{ root: '', dir: '', base: 'file', ext: '', name: 'file' }, 'file'],
+
+E:\homestead\code\larabbs\node_modules\postcss\lib\input.js:
+   70           * @example
+   71           * const root = postcss.parse(css, { from: 'a.css' })
+   72:          * root.source.input.file //=> '/home/ai/a.css'
+   73           */
+   74          this.file = opts.from;
+   ..
+  187     * @example
+  188     * const root = postcss.parse(css, { from: 'a.css' })
+  189:    * root.source.input.from //=> "/home/ai/a.css"
+  190     *
+  191     * const root = postcss.parse(css)
+
+E:\homestead\code\larabbs\node_modules\postcss\lib\node.js:
+  547     *
+  548     * @example
+  549:    * decl.source.input.from //=> '/home/ai/a.sass'
+  550     * decl.source.start      //=> { line: 10, column: 2 }
+  551     * decl.source.end        //=> { line: 10, column: 12 }
+
+E:\homestead\code\larabbs\node_modules\postcss-discard-overridden\yarn.lock:
+  479  home-or-tmp@^2.0.0:
+  480    version "2.0.0"
+  481:   resolved "https://registry.yarnpkg.com/home-or-tmp/-/home-or-tmp-2.0.0.tgz#e36c3f2d2cae7d746a857e38d18d5f32a7882db8"
+  482    dependencies:
+  483      os-homedir "^1.0.0"
+
+E:\homestead\code\larabbs\node_modules\postcss-modules-extract-imports\node_modules\postcss\lib\input.js:
+   69                   * @example
+   70                   * const root = postcss.parse(css, { from: 'a.css' });
+   71:                  * root.source.input.file //=> '/home/ai/a.css'
+   72                   */
+   73                  this.file = opts.from;
+   ..
+  175       * @example
+  176       * const root = postcss.parse(css, { from: 'a.css' });
+  177:      * root.source.input.from //=> "/home/ai/a.css"
+  178       *
+  179       * const root = postcss.parse(css);
+
+E:\homestead\code\larabbs\node_modules\postcss-modules-extract-imports\node_modules\postcss\lib\node.js:
+  565       *
+  566       * @example
+  567:      * decl.source.input.from //=> '/home/ai/a.sass'
+  568       * decl.source.start      //=> { line: 10, column: 2 }
+  569       * decl.source.end        //=> { line: 10, column: 12 }
+
+E:\homestead\code\larabbs\node_modules\postcss-modules-local-by-default\node_modules\postcss\lib\input.js:
+   69                   * @example
+   70                   * const root = postcss.parse(css, { from: 'a.css' });
+   71:                  * root.source.input.file //=> '/home/ai/a.css'
+   72                   */
+   73                  this.file = opts.from;
+   ..
+  175       * @example
+  176       * const root = postcss.parse(css, { from: 'a.css' });
+  177:      * root.source.input.from //=> "/home/ai/a.css"
+  178       *
+  179       * const root = postcss.parse(css);
+
+E:\homestead\code\larabbs\node_modules\postcss-modules-local-by-default\node_modules\postcss\lib\node.js:
+  565       *
+  566       * @example
+  567:      * decl.source.input.from //=> '/home/ai/a.sass'
+  568       * decl.source.start      //=> { line: 10, column: 2 }
+  569       * decl.source.end        //=> { line: 10, column: 12 }
+
+E:\homestead\code\larabbs\node_modules\postcss-modules-scope\node_modules\postcss\lib\input.js:
+   69                   * @example
+   70                   * const root = postcss.parse(css, { from: 'a.css' });
+   71:                  * root.source.input.file //=> '/home/ai/a.css'
+   72                   */
+   73                  this.file = opts.from;
+   ..
+  175       * @example
+  176       * const root = postcss.parse(css, { from: 'a.css' });
+  177:      * root.source.input.from //=> "/home/ai/a.css"
+  178       *
+  179       * const root = postcss.parse(css);
+
+E:\homestead\code\larabbs\node_modules\postcss-modules-scope\node_modules\postcss\lib\node.js:
+  565       *
+  566       * @example
+  567:      * decl.source.input.from //=> '/home/ai/a.sass'
+  568       * decl.source.start      //=> { line: 10, column: 2 }
+  569       * decl.source.end        //=> { line: 10, column: 12 }
+
+E:\homestead\code\larabbs\node_modules\postcss-modules-values\node_modules\postcss\lib\input.js:
+   69                   * @example
+   70                   * const root = postcss.parse(css, { from: 'a.css' });
+   71:                  * root.source.input.file //=> '/home/ai/a.css'
+   72                   */
+   73                  this.file = opts.from;
+   ..
+  175       * @example
+  176       * const root = postcss.parse(css, { from: 'a.css' });
+  177:      * root.source.input.from //=> "/home/ai/a.css"
+  178       *
+  179       * const root = postcss.parse(css);
+
+E:\homestead\code\larabbs\node_modules\postcss-modules-values\node_modules\postcss\lib\node.js:
+  565       *
+  566       * @example
+  567:      * decl.source.input.from //=> '/home/ai/a.sass'
+  568       * decl.source.start      //=> { line: 10, column: 2 }
+  569       * decl.source.end        //=> { line: 10, column: 12 }
+
+E:\homestead\code\larabbs\node_modules\prettier\parser-postcss.js:
+ 6863     *
+ 6864     * @example
+ 6865:    * decl.source.input.from //=> '/home/ai/a.sass'
+ 6866     * decl.source.start      //=> { line: 10, column: 2 }
+ 6867     * decl.source.end        //=> { line: 10, column: 12 }
+ ....
+ 7705       *
+ 7706       * @example
+ 7707:      * decl.source.input.from //=> '/home/ai/a.sass'
+ 7708       * decl.source.start      //=> { line: 10, column: 2 }
+ 7709       * decl.source.end        //=> { line: 10, column: 12 }
+ ....
+ 7857           * @example
+ 7858           * const root = postcss.parse(css, { from: 'a.css' });
+ 7859:          * root.source.input.file //=> '/home/ai/a.css'
+ 7860           */
+ 7861          this.file = opts.from;
+ ....
+ 7966     * @example
+ 7967     * const root = postcss.parse(css, { from: 'a.css' });
+ 7968:    * root.source.input.from //=> "/home/ai/a.css"
+ 7969     *
+ 7970     * const root = postcss.parse(css);
+ ....
+ 11634           * @example
+ 11635           * const root = postcss.parse(css, { from: 'a.css' })
+ 11636:          * root.source.input.file //=> '/home/ai/a.css'
+ 11637           */
+ 11638          this.file = opts.from;
+ .....
+ 11751     * @example
+ 11752     * const root = postcss.parse(css, { from: 'a.css' })
+ 11753:    * root.source.input.from //=> "/home/ai/a.css"
+ 11754     *
+ 11755     * const root = postcss.parse(css)
+
+E:\homestead\code\larabbs\node_modules\require-directory\README.markdown:
+   54  ```javascript
+   55  var routes = {
+   56:   home: require('routes/home.js'),
+   57    auth: {
+   58      login: require('routes/auth/login.js'),
+
+E:\homestead\code\larabbs\node_modules\resolve\readme.markdown:
+   22  ```
+   23  $ node example/async.js
+   24: /home/substack/projects/node-resolve/node_modules/tap/lib/main.js
+   25  ```
+   26  
+   ..
+   35  ```
+   36  $ node example/sync.js
+   37: /home/substack/projects/node-resolve/node_modules/tap/lib/main.js
+   38  ```
+   39  
+
+E:\homestead\code\larabbs\node_modules\resolve-dir\node_modules\global-modules\README.md:
+   26  * [git-config-path](https://www.npmjs.com/package/git-config-path): Resolve the path to the user's local or global .gitconfig. | [homepage](https://github.com/jonschlinkert/git-config-path "Resolve the path to the user's local or global .gitconfig.")
+   27  * [global-prefix](https://www.npmjs.com/package/global-prefix): Get the npm global path prefix. | [homepage](https://github.com/jonschlinkert/global-prefix "Get the npm global path prefix.")
+   28: * [homedir-polyfill](https://www.npmjs.com/package/homedir-polyfill): Node.js os.homedir polyfill for older versions of node.js. | [homepage](https://github.com/doowb/homedir-polyfill "Node.js os.homedir polyfill for older versions of node.js.")
+   29  * [npm-paths](https://www.npmjs.com/package/npm-paths): Returns an array of unique "npm" directories based on the user's platform and environment. | [homepage](https://github.com/jonschlinkert/npm-paths "Returns an array of unique "npm" directories based on the user's platform and environment.")
+   30  
+
+E:\homestead\code\larabbs\node_modules\safer-buffer\Readme.md:
+   50  $ standard example.unsafe.js
+   51  standard: Use JavaScript Standard Style (https://standardjs.com)
+   52:   /home/chalker/repo/safer-buffer/example.unsafe.js:2:13: 'Buffer()' was deprecated since v6. Use 'Buffer.alloc()' or 'Buffer.from()' (use 'https://www.npmjs.com/package/safe-buffer' for '<4.5.0') instead.
+   53  ```
+   54  
+
+E:\homestead\code\larabbs\node_modules\stream-http\test\node\http-browserify.js:
+   86   }
+   87  
+   88:  var fileLocation = 'file:///home/me/stuff/index.html'
+   89  
+   90   var normalLocation = global.location
+
+E:\homestead\code\larabbs\node_modules\upath\upath.d.ts:
+   10      root: string;
+   11      /**
+   12:      * The full directory path such as '/home/user/dir' or 'c:\path\dir'
+   13       */
+   14      dir: string;
+
+E:\homestead\code\larabbs\node_modules\uri-js\README.md:
+   32  ### Normalizing
+   33  
+   34:  URI.normalize("HTTP://ABC.com:80/%7Esmith/home.html") === "http://abc.com/~smith/home.html"
+   35  
+   36  ### Comparison
+
+E:\homestead\code\larabbs\node_modules\uri-js\yarn.lock:
+ 1037  home-or-tmp@^2.0.0:
+ 1038    version "2.0.0"
+ 1039:   resolved "https://registry.yarnpkg.com/home-or-tmp/-/home-or-tmp-2.0.0.tgz#e36c3f2d2cae7d746a857e38d18d5f32a7882db8"
+ 1040    dependencies:
+ 1041      os-homedir "^1.0.0"
+
+E:\homestead\code\larabbs\node_modules\uri-js\tests\tests.js:
+  504   test("HTTP Equals", function () {
+  505       //test from RFC 2616
+  506:      strictEqual(URI.equal("http://abc.com:80/~smith/home.html", "http://abc.com/~smith/home.html"), true);
+  507:      strictEqual(URI.equal("http://ABC.com/%7Esmith/home.html", "http://abc.com/~smith/home.html"), true);
+  508:      strictEqual(URI.equal("http://ABC.com:/%7esmith/home.html", "http://abc.com/~smith/home.html"), true);
+  509       strictEqual(URI.equal("HTTP://ABC.COM", "http://abc.com/"), true);
+  510       //test from RFC 3986
+
+E:\homestead\code\larabbs\node_modules\url\test.js:
+ 1451     'file://meetings.example.com/cal#m1'],
+ 1452    ['file://meetings.example.com/cal#m1',
+ 1453:    'file:/home/connolly/w3ccvs/WWW/2000/10/swap/test/reluri-1.n3',
+ 1454     'file://meetings.example.com/cal#m1'],
+ 1455    ['./#blort', 'file:/some/dir/foo', 'file:/some/dir/#blort'],
+
+E:\homestead\code\larabbs\node_modules\vue-style-loader\yarn.lock:
+ 1283  home-or-tmp@^2.0.0:
+ 1284    version "2.0.0"
+ 1285:   resolved "https://registry.yarnpkg.com/home-or-tmp/-/home-or-tmp-2.0.0.tgz#e36c3f2d2cae7d746a857e38d18d5f32a7882db8"
+ 1286    dependencies:
+ 1287      os-homedir "^1.0.0"
+
+E:\homestead\code\larabbs\node_modules\webpack\README.md:
+  322  <h2 align="center">Contributing</h2>
+  323  
+  324: **We want contributing to webpack to be fun, enjoyable, and educational for anyone, and everyone.** We have a [vibrant ecosystem](https://medium.com/webpack/contributors-guide/home) that spans beyond this single repo. We welcome you to check out any of the repositories in [our organization](http://github.com/webpack) or [webpack-contrib organization](http://github.com/webpack-contrib) which houses all of our loaders and plugins.
+  325  
+  326  Contributions go far beyond pull requests and commits. Although we love giving you the opportunity to put your stamp on webpack, we also are thrilled to receive a variety of other contributions including:
+  ...
+  338  If you are worried or don't know where to start, you can **always** reach out to [Sean Larkin (@TheLarkInn) on Twitter](https://twitter.com/thelarkinn) or simply submit an issue and a maintainer can help give you guidance!
+  339  
+  340: We have also started a series on our [Medium Publication](https://medium.com/webpack) called [The Contributor's Guide to webpack](https://medium.com/webpack/contributors-guide/home). We welcome you to read it and post any questions or responses if you still need help.
+  341  
+  342  _Looking to speak about webpack?_ We'd **love** to review your talk abstract/CFP! You can email it to webpack [at] opencollective [dot] com and we can give pointers or tips!!!
+
+E:\homestead\code\larabbs\public\js\app.js:
+ 49367  /***/ (function(module, exports, __webpack_require__) {
+ 49368  
+ 49369: __webpack_require__(/*! /home/vagrant/code/larabbs/resources/js/app.js */"./resources/js/app.js");
+ 49370: module.exports = __webpack_require__(/*! /home/vagrant/code/larabbs/resources/sass/app.scss */"./resources/sass/app.scss");
+ 49371  
+ 49372  
+
+E:\homestead\code\larabbs\resources\views\welcome.blade.php:
+   69                  <div class="top-right links">
+   70                      @auth
+   71:                         <a href="{{ url('/home') }}">Home</a>
+   72                      @else
+   73                          <a href="{{ route('login') }}">Login</a>
+
+E:\homestead\code\larabbs\storage\framework\views\157ead39446dd4266925f2ce89624f5b01bad7b5.php:
+  100  <?php $__env->stopSection(); ?>
+  101  
+  102: <?php echo $__env->make('layouts.app', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH /home/vagrant/code/larabbs/resources/views/auth/register.blade.php ENDPATH**/ ?>
+
+E:\homestead\code\larabbs\storage\framework\views\565b982787583e7aaa3489a56fdd9e1537ea1f4f.php:
+    6          <p class="float-right"><a href="mailto:402404932@qq.com">联系我们</a> </p>
+    7      </div>
+    8: </footer><?php /**PATH /home/vagrant/code/larabbs/resources/views/layouts/_footer.blade.php ENDPATH**/ ?>
+
+E:\homestead\code\larabbs\storage\framework\views\58895ecbc9d0f682918e085f682c97032246e5b3.php:
+   55  <?php $__env->stopSection(); ?>
+   56  
+   57: <?php echo $__env->make('layouts.app', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH /home/vagrant/code/larabbs/resources/views/auth/passwords/email.blade.php ENDPATH**/ ?>
+
+E:\homestead\code\larabbs\storage\framework\views\5fad81b0c40c81e252f7812d5455aad5f95f8450.php:
+    4      <h1>这是首页</h1>
+    5      <?php $__env->stopSection(); ?>
+    6: <?php echo $__env->make('layouts.app', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH /home/vagrant/code/larabbs/resources/views/pages/root.blade.php ENDPATH**/ ?>
+
+E:\homestead\code\larabbs\storage\framework\views\6e0eb6b0a1031df4fb29bff9703dd673d76d06df.php:
+   90  <?php $__env->stopSection(); ?>
+   91  
+   92: <?php echo $__env->make('layouts.app', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH /home/vagrant/code/larabbs/resources/views/auth/login.blade.php ENDPATH**/ ?>
+
+E:\homestead\code\larabbs\storage\framework\views\71e8df0f4851e9e08c62b7c61af2fc37af892238.php:
+    9  
+   10      <?php endif; ?>
+   11: <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?><?php /**PATH /home/vagrant/code/larabbs/resources/views/shared/_messages.blade.php ENDPATH**/ ?>
+
+E:\homestead\code\larabbs\storage\framework\views\bdcf1bc15730cfeae25874610d85da9625705820.php:
+   69                  <div class="top-right links">
+   70                      <?php if(auth()->guard()->check()): ?>
+   71:                         <a href="<?php echo e(url('/home')); ?>">Home</a>
+   72                      <?php else: ?>
+   73                          <a href="<?php echo e(route('login')); ?>">Login</a>
+   ..
+   98      </body>
+   99  </html>
+  100: <?php /**PATH /home/vagrant/code/larabbs/resources/views/welcome.blade.php ENDPATH**/ ?>
+
+E:\homestead\code\larabbs\storage\framework\views\cae49f24c9d1da7806ae62169bd81653828691cf.php:
+   24  </body>
+   25  </html>
+   26: <?php /**PATH /home/vagrant/code/larabbs/resources/views/layouts/app.blade.php ENDPATH**/ ?>
+
+E:\homestead\code\larabbs\storage\framework\views\e4d5efa60c7b679de53e78492e1c07b371e8c971.php:
+   20  
+   21  </nav>
+   22: <?php /**PATH /home/vagrant/code/larabbs/resources/views/layouts/_header.blade.php ENDPATH**/ ?>
+
+E:\homestead\code\larabbs\storage\logs\laravel-2019-08-25.log:
+    1: [2019-08-25 17:04:03] local.ERROR: syntax error, unexpected '@', expecting ',' or ')' {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): syntax error, unexpected '@', expecting ',' or ')' at /home/vagrant/code/larabbs/routes/web.php:14)
+    2  [stacktrace]
+    3: #0 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Routing/Router.php(415): Illuminate\\Routing\\RouteFileRegistrar->register('/home/vagrant/c...')
+    4: #1 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Routing/Router.php(373): Illuminate\\Routing\\Router->loadRoutes('/home/vagrant/c...')
+    5: #2 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Routing/RouteRegistrar.php(121): Illuminate\\Routing\\Router->group(Array, '/home/vagrant/c...')
+    6: #3 /home/vagrant/code/larabbs/app/Providers/RouteServiceProvider.php(56): Illuminate\\Routing\\RouteRegistrar->group('/home/vagrant/c...')
+    7: #4 /home/vagrant/code/larabbs/app/Providers/RouteServiceProvider.php(40): App\\Providers\\RouteServiceProvider->mapWebRoutes()
+    8  #5 [internal function]: App\\Providers\\RouteServiceProvider->map()
+    9: #6 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(32): call_user_func_array(Array, Array)
+   10: #7 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(90): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+   11: #8 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(34): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+   12: #9 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Container/Container.php(576): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+   13: #10 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Foundation/Support/Providers/RouteServiceProvider.php(87): Illuminate\\Container\\Container->call(Array)
+   14: #11 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Foundation/Support/Providers/RouteServiceProvider.php(36): Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider->loadRoutes()
+   15: #12 /home/vagrant/code/larabbs/app/Providers/RouteServiceProvider.php(28): Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider->boot()
+   16  #13 [internal function]: App\\Providers\\RouteServiceProvider->boot()
+   17: #14 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(32): call_user_func_array(Array, Array)
+   18: #15 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(90): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+   19: #16 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(34): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+   20: #17 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Container/Container.php(576): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+   21: #18 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(827): Illuminate\\Container\\Container->call(Array)
+   22: #19 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(810): Illuminate\\Foundation\\Application->bootProvider(Object(App\\Providers\\RouteServiceProvider))
+   23  #20 [internal function]: Illuminate\\Foundation\\Application->Illuminate\\Foundation\\{closure}(Object(App\\Providers\\RouteServiceProvider), 20)
+   24: #21 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(811): array_walk(Array, Object(Closure))
+   25: #22 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/BootProviders.php(17): Illuminate\\Foundation\\Application->boot()
+   26: #23 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(210): Illuminate\\Foundation\\Bootstrap\\BootProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+   27: #24 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(162): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+   28: #25 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(146): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+   29: #26 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+   30: #27 /home/vagrant/code/larabbs/public/index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+   31  #28 {main}
+   32  "} 
+   33: [2019-08-25 17:04:36] local.ERROR: The Mix manifest does not exist. (View: /home/vagrant/code/larabbs/resources/views/layouts/app.blade.php) (View: /home/vagrant/code/larabbs/resources/views/layouts/app.blade.php) {"exception":"[object] (ErrorException(code: 0): The Mix manifest does not exist. (View: /home/vagrant/code/larabbs/resources/views/layouts/app.blade.php) (View: /home/vagrant/code/larabbs/resources/views/layouts/app.blade.php) at /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Foundation/Mix.php:46, ErrorException(code: 0): The Mix manifest does not exist. (View: /home/vagrant/code/larabbs/resources/views/layouts/app.blade.php) at /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Foundation/Mix.php:46, Exception(code: 0): The Mix manifest does not exist. at /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Foundation/Mix.php:46)
+   34  [stacktrace]
+   35: #0 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(45): Illuminate\\View\\Engines\\CompilerEngine->handleViewException(Object(ErrorException), 1)
+   36: #1 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(59): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('/home/vagrant/c...', Array)
+   37: #2 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/View/View.php(142): Illuminate\\View\\Engines\\CompilerEngine->get('/home/vagrant/c...', Array)
+   38: #3 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/View/View.php(125): Illuminate\\View\\View->getContents()
+   39: #4 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/View/View.php(90): Illuminate\\View\\View->renderContents()
+   40: #5 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Http/Response.php(42): Illuminate\\View\\View->render()
+   41: #6 /home/vagrant/code/larabbs/vendor/symfony/http-foundation/Response.php(202): Illuminate\\Http\\Response->setContent(Object(Illuminate\\View\\View))
+   42: #7 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Routing/Router.php(748): Symfony\\Component\\HttpFoundation\\Response->__construct(Object(Illuminate\\View\\View))
+   43: #8 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Routing/Router.php(720): Illuminate\\Routing\\Router::toResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+   44: #9 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Routing/Router.php(680): Illuminate\\Routing\\Router->prepareResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+   45: #10 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(30): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+   46: #11 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php(41): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+   47: #12 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(163): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+   48: #13 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+   49: #14 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php(75): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+   50: #15 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(163): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+   51: #16 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+   52: #17 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php(49): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+   53: #18 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(163): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+   54: #19 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+   55: #20 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(56): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+   56: #21 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(163): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+   57: #22 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+   58: #23 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php(37): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+   59: #24 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(163): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+   60: #25 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+   61: #26 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php(66): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+   62: #27 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(163): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+   63: #28 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+   64: #29 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(104): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+   65: #30 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Routing/Router.php(682): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+   66: #31 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Routing/Router.php(657): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+   67: #32 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Routing/Router.php(623): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+   68: #33 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Routing/Router.php(612): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+   69: #34 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(176): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+   70: #35 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(30): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+   71: #36 /home/vagrant/code/larabbs/vendor/fideloper/proxy/src/TrustProxies.php(57): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+   72: #37 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(163): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+   73: #38 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+   74: #39 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+   75: #40 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(163): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+   76: #41 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+   77: #42 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+   78: #43 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(163): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+   79: #44 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+   80: #45 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+   81: #46 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(163): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+   82: #47 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+   83: #48 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/CheckForMaintenanceMode.php(62): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+   84: #49 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(163): Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+   85: #50 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+   86: #51 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(104): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+   87: #52 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(151): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+   88: #53 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+   89: #54 /home/vagrant/code/larabbs/public/index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+   90  #55 {main}
+   91  "} 
+   92: [2019-08-25 17:53:49] local.ERROR: View [shared._message] not found. (View: /home/vagrant/code/larabbs/resources/views/layouts/app.blade.php) (View: /home/vagrant/code/larabbs/resources/views/layouts/app.blade.php) {"exception":"[object] (ErrorException(code: 0): View [shared._message] not found. (View: /home/vagrant/code/larabbs/resources/views/layouts/app.blade.php) (View: /home/vagrant/code/larabbs/resources/views/layouts/app.blade.php) at /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/View/FileViewFinder.php:137, ErrorException(code: 0): View [shared._message] not found. (View: /home/vagrant/code/larabbs/resources/views/layouts/app.blade.php) at /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/View/FileViewFinder.php:137, InvalidArgumentException(code: 0): View [shared._message] not found. at /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/View/FileViewFinder.php:137)
+   93  [stacktrace]
+   94: #0 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(45): Illuminate\\View\\Engines\\CompilerEngine->handleViewException(Object(ErrorException), 1)
+   95: #1 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(59): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('/home/vagrant/c...', Array)
+   96: #2 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/View/View.php(142): Illuminate\\View\\Engines\\CompilerEngine->get('/home/vagrant/c...', Array)
+   97: #3 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/View/View.php(125): Illuminate\\View\\View->getContents()
+   98: #4 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/View/View.php(90): Illuminate\\View\\View->renderContents()
+   99: #5 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Http/Response.php(42): Illuminate\\View\\View->render()
+  100: #6 /home/vagrant/code/larabbs/vendor/symfony/http-foundation/Response.php(202): Illuminate\\Http\\Response->setContent(Object(Illuminate\\View\\View))
+  101: #7 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Routing/Router.php(748): Symfony\\Component\\HttpFoundation\\Response->__construct(Object(Illuminate\\View\\View))
+  102: #8 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Routing/Router.php(720): Illuminate\\Routing\\Router::toResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+  103: #9 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Routing/Router.php(680): Illuminate\\Routing\\Router->prepareResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+  104: #10 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(30): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+  105: #11 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php(41): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+  106: #12 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(163): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+  107: #13 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+  108: #14 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php(75): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+  109: #15 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(163): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+  110: #16 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+  111: #17 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php(49): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+  112: #18 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(163): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+  113: #19 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+  114: #20 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(56): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+  115: #21 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(163): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+  116: #22 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+  117: #23 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php(37): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+  118: #24 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(163): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+  119: #25 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+  120: #26 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php(66): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+  121: #27 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(163): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+  122: #28 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+  123: #29 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(104): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+  124: #30 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Routing/Router.php(682): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+  125: #31 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Routing/Router.php(657): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+  126: #32 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Routing/Router.php(623): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+  127: #33 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Routing/Router.php(612): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+  128: #34 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(176): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+  129: #35 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(30): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+  130: #36 /home/vagrant/code/larabbs/vendor/fideloper/proxy/src/TrustProxies.php(57): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+  131: #37 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(163): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+  132: #38 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+  133: #39 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+  134: #40 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(163): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+  135: #41 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+  136: #42 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+  137: #43 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(163): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+  138: #44 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+  139: #45 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+  140: #46 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(163): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+  141: #47 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+  142: #48 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/CheckForMaintenanceMode.php(62): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+  143: #49 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(163): Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+  144: #50 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+  145: #51 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(104): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+  146: #52 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(151): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+  147: #53 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+  148: #54 /home/vagrant/code/larabbs/public/index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+  149  #55 {main}
+  150  "} 
+  151: [2019-08-25 19:09:33] local.ERROR: syntax error, unexpected 'Route' (T_STRING), expecting ',' or ')' {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): syntax error, unexpected 'Route' (T_STRING), expecting ',' or ')' at /home/vagrant/code/larabbs/routes/web.php:27)
+  152  [stacktrace]
+  153: #0 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Routing/Router.php(415): Illuminate\\Routing\\RouteFileRegistrar->register('/home/vagrant/c...')
+  154: #1 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Routing/Router.php(373): Illuminate\\Routing\\Router->loadRoutes('/home/vagrant/c...')
+  155: #2 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Routing/RouteRegistrar.php(121): Illuminate\\Routing\\Router->group(Array, '/home/vagrant/c...')
+  156: #3 /home/vagrant/code/larabbs/app/Providers/RouteServiceProvider.php(56): Illuminate\\Routing\\RouteRegistrar->group('/home/vagrant/c...')
+  157: #4 /home/vagrant/code/larabbs/app/Providers/RouteServiceProvider.php(40): App\\Providers\\RouteServiceProvider->mapWebRoutes()
+  158  #5 [internal function]: App\\Providers\\RouteServiceProvider->map()
+  159: #6 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(32): call_user_func_array(Array, Array)
+  160: #7 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(90): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+  161: #8 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(34): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+  162: #9 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Container/Container.php(576): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+  163: #10 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Foundation/Support/Providers/RouteServiceProvider.php(87): Illuminate\\Container\\Container->call(Array)
+  164: #11 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Foundation/Support/Providers/RouteServiceProvider.php(36): Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider->loadRoutes()
+  165: #12 /home/vagrant/code/larabbs/app/Providers/RouteServiceProvider.php(28): Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider->boot()
+  166  #13 [internal function]: App\\Providers\\RouteServiceProvider->boot()
+  167: #14 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(32): call_user_func_array(Array, Array)
+  168: #15 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(90): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+  169: #16 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(34): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+  170: #17 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Container/Container.php(576): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+  171: #18 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(827): Illuminate\\Container\\Container->call(Array)
+  172: #19 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(810): Illuminate\\Foundation\\Application->bootProvider(Object(App\\Providers\\RouteServiceProvider))
+  173  #20 [internal function]: Illuminate\\Foundation\\Application->Illuminate\\Foundation\\{closure}(Object(App\\Providers\\RouteServiceProvider), 20)
+  174: #21 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(811): array_walk(Array, Object(Closure))
+  175: #22 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/BootProviders.php(17): Illuminate\\Foundation\\Application->boot()
+  176: #23 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(210): Illuminate\\Foundation\\Bootstrap\\BootProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+  177: #24 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(162): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+  178: #25 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(146): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+  179: #26 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+  180: #27 /home/vagrant/code/larabbs/public/index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+  181  #28 {main}
+  182  "} 
+  183: [2019-08-25 19:25:59] local.ERROR: There are no commands defined in the "lang" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"lang\" namespace. at /home/vagrant/code/larabbs/vendor/symfony/console/Application.php:589)
+  184  [stacktrace]
+  185: #0 /home/vagrant/code/larabbs/vendor/symfony/console/Application.php(638): Symfony\\Component\\Console\\Application->findNamespace('lang')
+  186: #1 /home/vagrant/code/larabbs/vendor/symfony/console/Application.php(237): Symfony\\Component\\Console\\Application->find('lang:publish')
+  187: #2 /home/vagrant/code/larabbs/vendor/symfony/console/Application.php(149): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+  188: #3 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Console/Application.php(90): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+  189: #4 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(133): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+  190: #5 /home/vagrant/code/larabbs/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+  191  #6 {main}
+  192  "} 
+  193: [2019-08-25 19:26:39] local.ERROR: There are no commands defined in the "lang" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"lang\" namespace. at /home/vagrant/code/larabbs/vendor/symfony/console/Application.php:589)
+  194  [stacktrace]
+  195: #0 /home/vagrant/code/larabbs/vendor/symfony/console/Application.php(638): Symfony\\Component\\Console\\Application->findNamespace('lang')
+  196: #1 /home/vagrant/code/larabbs/vendor/symfony/console/Application.php(237): Symfony\\Component\\Console\\Application->find('lang:publish')
+  197: #2 /home/vagrant/code/larabbs/vendor/symfony/console/Application.php(149): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+  198: #3 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Console/Application.php(90): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+  199: #4 /home/vagrant/code/larabbs/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(133): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+  200: #5 /home/vagrant/code/larabbs/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+  201  #6 {main}
+  202  "} 
+
+E:\homestead\code\larabbs\vendor\laravel\framework\src\Illuminate\Auth\Console\AuthMakeCommand.php:
+   54          if (! $this->option('views')) {
+   55              file_put_contents(
+   56:                 app_path('Http/Controllers/HomeController.php'),
+   57                  $this->compileControllerStub()
+   58              );
+   ..
+  115              '{{namespace}}',
+  116              $this->getAppNamespace(),
+  117:             file_get_contents(__DIR__.'/stubs/make/controllers/HomeController.stub')
+  118          );
+  119      }
+
+E:\homestead\code\larabbs\vendor\laravel\framework\src\Illuminate\Auth\Console\stubs\make\routes.stub:
+    2  Auth::routes();
+    3  
+    4: Route::get('/home', 'HomeController@index')->name('home');
+    5  
+
+E:\homestead\code\larabbs\vendor\laravel\framework\src\Illuminate\Foundation\Auth\RedirectsUsers.php:
+   16          }
+   17  
+   18:         return property_exists($this, 'redirectTo') ? $this->redirectTo : '/home';
+   19      }
+   20  }
+
+E:\homestead\code\larabbs\vendor\phpunit\php-code-coverage\src\Node\Builder.php:
+  122       * Array
+  123       * (
+  124:      *     [/home/sb/Money/Money.php] => Array
+  125       *         (
+  126       *             ...
+  127       *         )
+  128       *
+  129:      *     [/home/sb/Money/MoneyBag.php] => Array
+  130       *         (
+  131       *             ...
+
+E:\homestead\code\larabbs\vendor\psy\psysh\README.md:
+    1  # PsySH
+    2  
+    3: PsySH is a runtime developer console, interactive debugger and [REPL](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop) for PHP. Learn more at [psysh.org](http://psysh.org/) and [in the manual](https://github.com/bobthecow/psysh/wiki/Home).
+    4  
+    5  
+    .
+   14  <a id="downloading-the-manual"></a>
+   15  
+   16: ## [PsySH manual](https://github.com/bobthecow/psysh/wiki/Home)
+   17  
+   18  ### [💾 Installation](https://github.com/bobthecow/psysh/wiki/Installation)
+
+E:\homestead\code\larabbs\vendor\sebastian\exporter\README.md:
+   21      'string' => ''
+   22      'code' => 0
+   23:     'file' => '/home/sebastianbergmann/test.php'
+   24      'line' => 34
+   25      'previous' => null
+
+E:\homestead\code\larabbs\vendor\symfony\debug\Tests\FatalErrorHandler\UndefinedMethodFatalErrorHandlerTest.php:
+   67                      'type' => 1,
+   68                      'message' => 'Call to undefined method class@anonymous::test()',
+   69:                     'file' => '/home/possum/work/symfony/test.php',
+   70                      'line' => 11,
+   71                  ],
+
+E:\homestead\code\larabbs\vendor\symfony\http-foundation\Tests\BinaryFileResponseTest.php:
+  338          return [
+  339              ['/var/www/var/www/files/foo.txt', '/var/www/=/files/', '/files/var/www/files/foo.txt'],
+  340:             ['/home/Foo/bar.txt', '/var/www/=/files/,/home/Foo/=/baz/', '/baz/bar.txt'],
+  341:             ['/home/Foo/bar.txt', '"/var/www/"="/files/", "/home/Foo/"="/baz/"', '/baz/bar.txt'],
+  342:             ['/tmp/bar.txt', '"/var/www/"="/files/", "/home/Foo/"="/baz/"', null],
+  343          ];
+  344      }
+
+E:\homestead\code\larabbs\vendor\symfony\http-foundation\Tests\RequestTest.php:
+ 1696                  '/foo%20bar/',
+ 1697                  [
+ 1698:                     'SCRIPT_FILENAME' => '/home/John Doe/public_html/foo bar/app.php',
+ 1699                      'SCRIPT_NAME' => '/foo bar/app.php',
+ 1700                      'PHP_SELF' => '/foo bar/app.php',
+ ....
+ 1704              ],
+ 1705              [
+ 1706:                 '/foo%20bar/home',
+ 1707                  [
+ 1708:                     'SCRIPT_FILENAME' => '/home/John Doe/public_html/foo bar/app.php',
+ 1709                      'SCRIPT_NAME' => '/foo bar/app.php',
+ 1710                      'PHP_SELF' => '/foo bar/app.php',
+ 1711                  ],
+ 1712                  '/foo%20bar',
+ 1713:                 '/home',
+ 1714              ],
+ 1715              [
+ 1716:                 '/foo%20bar/app.php/home',
+ 1717                  [
+ 1718:                     'SCRIPT_FILENAME' => '/home/John Doe/public_html/foo bar/app.php',
+ 1719                      'SCRIPT_NAME' => '/foo bar/app.php',
+ 1720                      'PHP_SELF' => '/foo bar/app.php',
+ 1721                  ],
+ 1722                  '/foo%20bar/app.php',
+ 1723:                 '/home',
+ 1724              ],
+ 1725              [
+ 1726:                 '/foo%20bar/app.php/home%3Dbaz',
+ 1727                  [
+ 1728:                     'SCRIPT_FILENAME' => '/home/John Doe/public_html/foo bar/app.php',
+ 1729                      'SCRIPT_NAME' => '/foo bar/app.php',
+ 1730                      'PHP_SELF' => '/foo bar/app.php',
+ 1731                  ],
+ 1732                  '/foo%20bar/app.php',
+ 1733:                 '/home%3Dbaz',
+ 1734              ],
+ 1735              [
+ 1736                  '/foo/bar+baz',
+ 1737                  [
+ 1738:                     'SCRIPT_FILENAME' => '/home/John Doe/public_html/foo/app.php',
+ 1739                      'SCRIPT_NAME' => '/foo/app.php',
+ 1740                      'PHP_SELF' => '/foo/app.php',
+
+E:\homestead\code\larabbs\vendor\symfony\http-foundation\Tests\ResponseTest.php:
+  159      public function testIsNotModifiedNotSafe()
+  160      {
+  161:         $request = Request::create('/homepage', 'POST');
+  162  
+  163          $response = new Response();
+
+373 matches across 73 files
