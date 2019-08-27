@@ -1,0 +1,33 @@
+git init		#初始化一个Git仓库
+git add <file>		#把文件添加到仓库
+git commit -m <message>		#把文件提交到仓库
+git status		#查看工作区的状态
+git diff		#查看修改内容
+git log		#查看提交历史
+git reset --hard commit_id		#commit提交版本间切换
+git reflog		#查看命令历史
+git checkout -- file		#直接丢弃工作区的修改,其实是用版本库里的版本替换工作区的版本
+git reset HEAD <file>		#暂存区丢弃修改
+git rm		#删除文件
+git remote add origin git@github.com:candy3721/repo-name.git		#关联远程库
+git push -u origin master		#第一次推送master分支的所有内容
+git push origin master		#推送master分支
+git clone git@github.com:candy3721/gitskills.git		#从远程库克隆
+git branch		#查看当前分支
+git branch <name>		#创建分支
+git checkout <name>/git switch <name>		#切换分支
+git checkout -b <name>/git switch -c <name>		#创建并切换分支
+git merge <name>		#把<name>分支合并到当前分支上
+git merge --no-ff -m "<message>" <name>		#合并v分支，请注意--no-ff参数，表示禁用Fast forward模式，这样就有历史分支，能看出来曾经做过合并，而fast forward合并就看不出来曾经做过合并。
+git branch -d <name>		#删除分支
+git branch -D <name>		#强行删除一个没有被合并过的分支
+git log --graph --pretty=oneline --abbrev-commit		#看分支合并图
+git stash		#把当前工作现场“储藏”起来，等以后恢复现场后继续工作
+git stash pop		#恢复的同时把stash内容也删了
+git cherry-pick <commit>
+git remote		#查看远程库的信息
+git remote -v	#查看远程库的详细信息
+it checkout -b branch-name origin/branch-name		#在本地创建和远程分支对应的分支
+git branch --set-upstream-to <branch-name> origin/<branch-name>		#创建本地分支和远程分支的链接关系
+git pull		#抓取远程的新提交
+git tag <name>		#打标签
