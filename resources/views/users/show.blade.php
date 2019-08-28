@@ -9,7 +9,7 @@
             <img src="/jysct.gif"  width="150" class="card-img-top">
             <div class="card">
                 <h5><strong>个人简介</strong></h5>
-                <p>Lorm ipsum dolor</p>
+                <p>{{$user->introduction}}</p>
                 <hr>
                 <h5><strong>Register Since</strong></h5>
                 <p>January 01 1901</p>
