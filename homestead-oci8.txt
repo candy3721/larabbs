@@ -25,13 +25,14 @@ source /etc/profile
 
 
 3.安装PHP-OCI8扩展
-安装pecl：php go-pear.phar，默认回车
+安装pecl：wget http://pear.php.net/go-pear.phar -O go-pear.php
+php go-pear.phar，默认回车
 pecl search oci8
 pecl install oci8
 
 询问instantclient位置时，输入instantclient,/usr/lib/oracle/10.2.0.5/client64/lib
 
-/etc/php/7.2/cli/php.ini ºÍ/etc/php/7.2/fpm/php.ini中加入
+/etc/php/7.2/cli/php.ini 和/etc/php/7.2/fpm/php.ini中加入
 extension=oci8.so
 
 
