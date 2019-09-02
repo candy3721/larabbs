@@ -1,8 +1,8 @@
-1. ×¼±¸¹¤×÷£¬ÏÈ°²×°RPM
+1. å‡†å¤‡å·¥ä½œï¼Œå…ˆå®‰è£…RPM
 root@ubuntu:/opt# apt-get install rpm
 
 
-2 °²×°ORACLE¿Í»§¶Ë£º
+2 å®‰è£…ORACLEå®¢æˆ·ç«¯ï¼š
 rpm -ivh oracle-instantclient-basic-10.2.0.5-1.x86_64.rpm
 rpm -ivh oracle-instantclient-devel-10.2.0.5-1.x86_64.rpm
 
@@ -13,24 +13,55 @@ echo "/usr/lib/oracle/10.2.0.5/client64/lib/" > /etc/ld.so.conf.d/oracle_client.
 /sbin/ldconfig
 
 
-vi /etc/profile£¬¼ÓÈë
+vi /etc/profileï¼ŒåŠ å…¥
 export ORACLE_HOME=/usr/lib/oracle/10.2.0.5/client64
 export PATH=$PATH:$ORACLE_HOME/bin
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/lib/oracle/10.2.0.5/client64/lib
 
-ÈÃÆäÁ¢¼´ÉúÐ§µÄÃüÁî
+è®©å…¶ç«‹å³ç”Ÿæ•ˆçš„å‘½ä»¤
 
 source /etc/profile
 
 
-3.°²×°PHP-OCI8À©Õ¹
+
+3.å®‰è£…PHP-OCI8æ‰©å±•
 pecl install oci8
 
-Ñ¯ÎÊinstantclientÎ»ÖÃÊ±£¬ÊäÈëinstantclient,/usr/lib/oracle/10.2.0.5/client64/lib
+è¯¢é—®instantclientä½ç½®æ—¶ï¼Œè¾“å…¥instantclient,/usr/lib/oracle/10.2.0.5/client64/lib
 
-/etc/php/7.2/cli/php.ini ºÍ/etc/php/7.2/fpm/php.iniÖÐ¼ÓÈë
+/etc/php/7.2/cli/php.ini ÂºÃ/etc/php/7.2/fpm/php.iniä¸­åŠ å…¥
 extension=oci8.so
 
 
 
-php -m |grep oci8²é¿´
+php -m |grep oci8æŸ¥çœ‹
+
+4.å®‰è£…yajra/laravel-oci8
+composer require yajra/laravel-oci8:"5.8.*"
+
+
+5.åœ¨config/app.phpçš„providers keyä¸­æ·»åŠ ï¼šYajra\Oci8\Oci8ServiceProvider::class,
+
+6.åœ¨config/database.phpä¸­æ·»åŠ ï¼š
+'oracle' => [
+            'driver' => 'oracle',
+            'host' => '192.168.1.13',
+            'port' => '1521',
+            'database' => 'jydb',
+            'service_name' => '',
+            'username' => '****',
+            'password' => '****',
+            'charset' => 'utf8',
+            'prefix' => '',
+        ]
+
+ä¿®æ”¹ï¼š'default' => env('DB_CONNECTION', 'oracle'),
+
+
+7.  .envä¸­ä¿®æ”¹
+DB_CONNECTION=oracle
+DB_HOST=192.168.1.13
+DB_PORT=1521
+DB_DATABASE=jydb
+DB_USERNAME=7777
+DB_PASSWORD=secret

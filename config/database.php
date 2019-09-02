@@ -90,6 +90,17 @@ return [
             'prefix' => '',
             'prefix_indexes' => true,
         ],
+        'oracle' => [
+            'driver' => 'oracle',
+            'host' => '192.168.1.13',
+            'port' => '1521',
+            'database' => 'jydb',
+            'service_name' => '',
+            'username' => '7777',
+            'password' => '7777',
+            'charset' => 'utf8',
+            'prefix' => '',
+        ]
 
     ],
 
