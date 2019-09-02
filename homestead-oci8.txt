@@ -25,6 +25,8 @@ source /etc/profile
 
 
 3.安装PHP-OCI8扩展
+安装pecl：php go-pear.phar，默认回车
+pecl search oci8
 pecl install oci8
 
 询问instantclient位置时，输入instantclient,/usr/lib/oracle/10.2.0.5/client64/lib
