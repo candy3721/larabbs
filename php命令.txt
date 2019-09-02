@@ -1,0 +1,338 @@
+composer create-project laravel/laravel Laravel --prefer-dist "5.5.*"
+
+
+
+数据表的迁移：创建数据表的操作+删除数据表的操作
+当前项目中第一次执行迁移文件时，要在数据库中创建用于记录迁移文件的记录数据表migration
+命令：php artisan migrate:install
+①创建和编写迁移文件，迁移文件默认路径：database\migrations
+迁移文件不需要分目录管理，可以直接书写名称即可
+创建迁移文件：php artisan make:migration   create_表名_table
+php artisan make:migration   creat_表名_table --create=表名，创建迁移文件并关联的数据库表
+
+
+②编写迁移文件代码，要遵循的语法：$table->列类型方法(字段名,[长度/值范围])->列修饰方法([修饰的值])
+③执行迁移文件，分为up和down两个执行方法
+
+创建表(up)：  php artisan migrate
+删除表(down)：php artisan migrate:rollback,删除最后一个批次的数据表
+删除所有表: php artisan migrate:reset
+刷新更新结构的空表：php artisan  migrate:refresh，原有数据会被清空
+增加已有数据的表的字段：php artisan make:migration add_author_filed_into_books_table --table=books
+
+一条命令执行迁移文件和填充器文件
+php artisan migrate:refresh --seed
+
+
+
+
+
+
+数据表的填充：往数据表里插入数据
+①创建填充器(种子文件)，默认文件路径：database\seeds，不需要分目录管理
+命令：php artisan make:seeder 填充器名称（表名首字符大写+TableSeeder）
+不同表的数据可以放在同一个填充器里
+
+
+
+②编写填充器代码，建议使用DB门面去新增数据，DB使用时不需要引入，否则出错
+③执行填充器文件：php artisan db:seed --class=PaperTableSeeder
+
+
+解决mysql5.7以下出错的问题
+
+在 app\Providers\AppServiceProvider.php 文件里的 boot 方法里设置一个默认值
+
+public function boot(){
+ Schema::defaultStringLength(191);
+
+
+    
+
+
+
+创建模型命令：php artisan make:model 模型名称（首字母大写）
+	   php artisan make:model  分目录/模型名称（首字母大写）
+
+创建模型同时创建迁移文件 ：php artisan make:model 模型名称 -m
+创建模型同时创建迁移文件和模型工厂 php artisan make:model 模型名称 -fm
+生成工厂类并绑定对应的模型 php artisan make:factory PostFactory -m Post
+
+
+
+模型内定义结构
+class Member extends Model
+{
+    //定义模型关联的数据表(一个模型只操作一个表)
+    protected $table = 'member';
+    //定义主键,可选，但在主键字段不是id时则必须要做
+    protected $primaryKey = 'id';
+    //定义禁止时间自动更新
+    public $timestamps = false;
+    //设置允许写入的数据字段
+    protected $fillable = ['id','name','age','email','avatar'];
+使用create方法时，需要在模型中定义$fillable属性，允许写入字段的定义，如果没有时间相关的字段也要禁用时间字段更新功能
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+创建控制器：php artisan make:controller 控制器名称(首字母大写)+Controller关键词
+创建资源控制器并绑定模型
+php artisan make:controller --resource --model=模型名称 控制器名称
+ php artisan make:controller --resource --model=\Models\\User  UsersController
+
+
+
+
+关于项目中使用路径的说明：
+如果路径是给php代码使用的，则路径建议使用“./”形式；如果路径是给浏览器使用的则建议使用“/”形式
+
+resources\lang\zh-CN中的文件对应各项功能的语言转换
+
+
+增删改查+循环+判断
+
+控制器中使用SQL语句：
+增删改使用：DB::statement("sql语句");
+查询使用：DB::select("sql语句");
+
+视图存放路径l\resources\views，可以进行分目录管理
+视图文件名小写，后缀是.blade.php，也可以.php后缀，但是优先展示.blade.php文件
+
+视图中变量分配与展示
+①view(模板文件名称,数组)   数组就是需要分配的变量集合
+②view(模板文件名称)->with(数组)
+③view(模板文件名称)->with(名称,值)->with(名称,值)
+④compact函数，是php内置函数跟laravel框架没有关系，作用于打包数组
+语法：compact('变量名1','变量名2',...); -- 变量名是不带$的字符串
+
+视图模板中直接使用函数：{{函数名(参数1,参数2...)}}
+
+视图中遍历数据
+语法：@foreach($variable as $key =>$value)
+	//循环体  （get查询到的结果集中的每一条记录都是一个对象，因此在循环具体字段的时候要注意使用对象调用属性的方式才可以获取期数据
+          @endforeach
+
+视图中执行if判断
+语法： @if(条件表达式1)
+	执行语句1
+           @elseif(条件表达式2)
+	执行语句2
+           @else
+	默认的执行语句
+           @endif
+
+视图提交表单中防CSRF攻击，添加代码
+<input type="hidden" name="_token" value="<?php echo csrf_token(); ?>">
+或者
+<input type="hidden" name="_token" value="{{csrf_token()}}">
+或者
+{{csrf_field()}}
+
+模型操作（AR模式）三个核心（映射）
+①每个数据表             与数据表进行交互的Model模型映射（实例化模型）
+②记录中的字段          与模型类的属性映射（给属性赋值）
+③表中的每个记录      与一个完整的请求实例映射（具体的CURD操作）
+模型的位置在app目录下面，可以分目录进行创建
+定义模型注意事项，见图
+
+模型在控制器中的使用有2种方法：
+①直接像使用DB门面一样的操作方式，以调用静态方法为主的形式，该形式下的模型不需要实例化，如Member::get()
+②实例化模型后再去使用模型类，如：$model=new Member; $model ->get();
+
+自动验证规则：（部分）
+required      字段值不能为空
+max255       最长255个字符
+min:1          最少1个字符
+email          邮箱地址是否合法
+confirmed  验证2个字段是否相同，密码字段名：password，确认密码字段名：password_confirmation
+integer       字段是整形
+ip               验证字段必须是IP地址
+numeric     验证字段必须是数值
+
+
+
+使用分页功能实现当前数据表的分页效果步骤：
+a.查询符合分页条件的总的记录数
+b.计算总的页数 = 总记录数/每页记录数，并且向上取整
+c.拼凑分页的链接
+d.（核心）使用limit语法来限制分页的记录数
+e.展示分页的页码和分页数据
+f.建议考虑分页的样式显示
+①创建路由，展示列表页面
+②编写控制器中的方法代码，实现没有分页的效果（先不考虑分页效果）
+③展示数据
+每个分页器实例通过以下方法提供额外的分页信息：
+$results->count()  //当前页数据条数
+$results->currentPage()  //当前页码
+$results->firstItem()   //当前第一条数据的序号
+$results->hasMorePages()	//是否有后续页码
+$results->lastItem()	//当前页最后一条数据的序号
+$results->lastPage() (当使用 simplePagination 时无效)	//最后页序号
+$results->nextPageUrl()		//下一页的链接地址
+$results->perPage()	//每页显示数据条数
+$results->previousPageUrl()	//上一页的链接地址
+$results->total() (当使用 simplePagination 时无效)	//记录总条数
+$results->url($page)	//制作指定页码的链接地址
+
+
+验证码功能，先安装依赖包
+packagist网站搜索captcha，选择mews/captcha，使用composer下载、完成vendor\mews\captcha
+修改配置文件config/app.php
+providers中加入：Mews\Captcha\CaptchaServiceProvider::class,
+aliases中加入：'Captcha' => Mews\Captcha\Facades\Captcha::class,
+如果需要定义自己的配置，则需要生成配置文件，命令：php artisan vendor:publish，生成文件在config/captcha.php
+
+
+
+开始创建项目
+1.先创建目录，cmd进入目录后，然后通过composer进行创建
+composer create-project laravel/laravel=5.4.* --prefer-dist ./
+
+2.创建数据库 test
+修改.env文件，配置数据库连接操作
+
+3.设置网站本地化为中文
+下载语言包：composer require caouecs/laravel-lang:~3.0，下载好的包的文件路径：vendor\caouecs\laravel-lang\src
+将需要的语言包（zh-CN文件夹）复制到路径：resources\lang
+修改config/app.php文件中的locale的键值为zh-CN
+
+4.设置项目中使用的时区
+修改系统默认时区，config/app.php中timezone的键值为Aisa/shanghai或PRC
+
+5.清理项目
+删除不需要的文件
+删除app/Http/Controllers/Auth目录
+删除database\migrations下的2个示例迁移文件
+删除database\seeds下的示例种子文件
+删除resources\views下的默认欢迎文件
+删除public下的js、css文件夹
+
+6.关闭Mysql的严格模式
+修改config/database.php文件中mysql=>strict的键值为false
+
+7.安装debugbar工具条（开发时使用，上线时拿掉）
+安装条件：php版本>=7.0
+下载命令：composer require barryvdh/laravel-debugbar（laravel5.5以上版本）
+地址：https://github.com/barryvdh/laravel-debugbar/tree/2.4，命令：composer require barryvdh/laravel-debugbar:~2.4（laravel5.5以下版本）
+修改config/app.php文件，在providers中添加：Barryvdh\Debugbar\ServiceProvider::class,在aliases中添加：'Debugbar' => Barryvdh\Debugbar\Facade::class,
+
+ajax请求的响应
+常见的ajax响应数据的类型：json和xml、text/html
+案例：在页面中输出一个按钮，按钮要可以被点击，点击之后发送ajax请求，请求后台的数据，后台返回前端ajax一个json的数据
+
+跳转响应
+return redirect(路由)
+return redirect()->to(路由)
+
+
+会话控制
+session文件存放的路径：storage\framework\sessions
+引入时直接在控制器头部使用use Session
+Session::put('key3','value3')  存储一个变量
+Session::get('key3')   获取一个变量
+Session::get('key4','default') 获取一个变量，如果不存在则获取默认的值
+Session::put(['key4'=>'value4'])  以数组的形式存储数据
+Session::all() 取出session中的所有值
+Session::has('key1')  判断session中的某个值是否存在
+Session::forget('key1')  删除session中指定的值
+Session::flush()  清空所有session
+视图中使用格式{{Session:get('code')}}
+
+缓存操作
+配置文件路径：congfig/cache.php
+缓存文件存放路径：storage\framework\cache\data
+.env的CACHE_DRIVER 默认使用文件缓存
+主要方法
+Cache::put('key','value',$minutes)
+如果键已经存在，则直接覆盖原来的值，有效期必须设置，单位分钟
+Cache::get()
+Cache::add('key','value',$minutes)
+缓存项存在时不更新，不存在时添加数据到缓存，如果数据被成功添加到缓存则返回true，否则返回false
+Cache::pull('key')
+从缓存中获取缓存项后删除，如果缓存项不存在则返回null，一般设置一次性存储的数据
+Cache::forever('key’,'value')
+持久化存储数据到缓存，这些值必须通过forget方法手动从缓存中移除
+Cache::forget('key')
+从缓存中移除缓存项数据
+Cache::has('key')
+判断缓存项是否存在
+Cache::flush()
+清空缓存，并删除对应的目录
+缓存数值添加和减少，一般配合Cache::add('key','value',$minutes)使用
+Cache::increment('key')
+Cache::increment('key'$amount)
+Cache::decrement('key')
+Cache::decrement('key'$amount)
+
+联表操作
+语法：DB门面/模型->join联表方式名称(关联的表名，表1的字段，运算符，表2的字段)
+
+关联模型
+绑定模型的关系，实际就是关联表，后续需要使用联表查询的时候就可以直接使用关联模型。
+a:首先创建模型 php artisan make:model Home/Article
+b:定义基本的结构代码
+c:关联模型的方法：分析谁关联谁，此处是文章关联作者，需要将关联的代码写在主模型中
+
+①一对一关系
+一篇文章只有一个作者
+public function 被关联的模型名小写(){
+ return $this ->hasOne('被关联模型的命名空间','被关联模型的关系字段','本模型的关系字段');
+}
+②一对多关系
+一篇文章有多个评论
+public function 被关联的模型名小写(){
+ return $this ->hasMany('被关联模型的命名空间','被关联模型的关系字段','本模型的关系字段');
+}
+
+③多对多关系
+一篇文章可能有多个关键字，一个关键字可能被多个文章使用，需要依靠第三张表（文章与关键字的关系表）来建立关系
+不需要为关系表创建模型
+public function 被关联的模型名小写(){
+ return $this ->belongsToMany('被关联模型的命名空间','关系表的名称','关系表中本模型的关系字段'，'关系表中被关联模型的关系字段');
+}
+
+
+在 app/Http/Middleware/VerifyCsrfToken 中可以设置排除检查路由
+
+全局约束
+
+如果想要路由参数在全局范围内被给定正则表达式约束，可以使用 pattern 方法。需要在 RouteServiceProvider 类的 boot 方法中定义这种约束模式：
+
+定义中间件 make:middleware
+
+
+
+模型工厂生成数据方法：
+进入php artisan tinker，运行factory(App\User::class,10)->create()，10为生成10条数据
+
+创建资源管理器并绑定模型：
+php artisan make:controller --resource --model=模型名称 控制器名称
+
+创建策略并绑定模型
+php artisan make:policy --model=User UserPolicy
+
+
+模型的ORM的时候出现belongsTo和hasOne都有表示一对一的关系，但是二者并不相同。以下举例说明两者的区别： 
+首先有user表 字段 id name password字段 
+然后有user_address表 id user_id city字段
+：
+
+在User模型中关联user_address表的时候使用hasOne，因为在user表中没有关联两个表的外键
+：
+
+在UserAddress模型中关联user表的时候使用belongsTo，因为在user_address表中有关联两个表的外键user_id
+
+版权声明：本文为博主原创文章，转载请附上博文链接！

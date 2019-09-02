@@ -1,0 +1,36 @@
+1. 准备工作，先安装RPM
+root@ubuntu:/opt# apt-get install rpm
+
+
+2 安装ORACLE客户端：
+rpm -ivh oracle-instantclient-basic-10.2.0.5-1.x86_64.rpm
+rpm -ivh oracle-instantclient-devel-10.2.0.5-1.x86_64.rpm
+
+
+
+echo "/usr/lib/oracle/10.2.0.5/client64/lib/" > /etc/ld.so.conf.d/oracle_client.conf
+
+/sbin/ldconfig
+
+
+vi /etc/profile，加入
+export ORACLE_HOME=/usr/lib/oracle/10.2.0.5/client64
+export PATH=$PATH:$ORACLE_HOME/bin
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/lib/oracle/10.2.0.5/client64/lib
+
+让其立即生效的命令
+
+source /etc/profile
+
+
+3.安装PHP-OCI8扩展
+pecl install oci8
+
+询问instantclient位置时，输入instantclient,/usr/lib/oracle/10.2.0.5/client64/lib
+
+/etc/php/7.2/cli/php.ini 和/etc/php/7.2/fpm/php.ini中加入
+extension=oci8.so
+
+
+
+php -m |grep oci8查看
