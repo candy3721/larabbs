@@ -42,7 +42,7 @@ class UsersController extends Controller
     public function update(UserRequest $request, User $user)
     {
 
-
+        dd($request->avatar);
         $info = [
             'name' => $request->name,
             'introduction' => $request->introduction,
