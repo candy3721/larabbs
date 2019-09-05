@@ -1,0 +1,149 @@
+centos7+lnmp1.6+laravel5.8+oci8安装说明
+
+A.LNMP默认网站配置文件：/usr/local/nginx/conf/nginx.conf
+
+
+
+B.为了安全 LNMP 默认是禁止mysql远程连接的，开启远程链接方法
+    1.登录 mysql -uroot -p
+	use mysql;
+	grant all privileges on *.* to 'root'@'%' identified by '123456' with grant option;
+	flush privileges;
+	exit;  退出mysql
+
+	2.vi /etc/my.cnf,将选项skip-networking注释掉
+	
+	3.vi /etc/sysconfig/iptables,找到-A INPUT -p tcp -m tcp –dport 3306 -j ACCEPT,没有就加上，或者后面的ACCEPT是DROP，改成ACCEPT
+
+	4.重启防火墙和mysql ，命令：service iptables restart && service mysql restart
+
+	5.查看防火墙已有的 iptables 规则，以序号显示，命令：iptables -L -n --line-numbers，查看3306端口是否已经ACCEPT
+
+C.解除PHP安全禁制，vi /usr/local/php/etc/php.ini,删除proc_open，proc_get_status,popen字符串
+
+
+
+D.安装laravel
+	1.进入 /home/wwwroot/
+	2.修改composer为阿里源，composer config -g repo.packagist composer https://mirrors.aliyun.com/composer/
+	3.下载laravel，composer create-project laravel/laravel 目录 --prefer-dist "5.8.*"
+
+
+
+E.添加虚拟主机
+	1.命令：lnmp vhost add ,
+	2.配置好之后，配置文件是在 /usr/local/nginx/conf/vhost/域名.conf 中，添加内容：	
+		location / {
+		    try_files $uri $uri/ /index.php?$query_string;
+		}
+
+
+F.解除LNMP防跨目录功能
+	1.文件.user.ini，在网站根目录/public下，可以修改.user.ini 里面的open_basedir的值来设置限制访问的目录或删除来移除防跨目录的设置。
+	2.文件.user.ini无法直接修改，如要修或删除需要先执行：chattr -i .user.ini
+	3.删除的话rm -f .user.ini 就可以。
+	4.如果修改的话，完成后再执行：chattr +i .user.ini
+	5.修改.user.ini不需要重启一般5分钟左右生效，也可以用重启命令：/etc/init.d/php-fpm restart 立即生效。
+	6.还需要将 /usr/local/nginx/conf/fastcgi.conf 里面的fastcgi_param PHP_ADMIN_VALUE "open_basedir=$document_root/:/tmp/:/proc/"; 在该行行前添加 # 或删除
+	7.重启nginx。
+
+#修改对应虚拟主机的配置文件(/usr/local/nginx/conf/vhost/域名.conf),将include enable-php.conf;替换为include enable-php-pathinfo.conf;
+
+G.对网站目录进行权限设置 ，输入下面3个命令行
+	1.chmod www:www -R 网站目录
+	2.在网站目录下
+		find storage -type d -exec chmod 777 {} \;
+		find storage -type f -exec chmod 777 {} \;
+
+H.LNMP下FTP服务器的安装和使用
+	1.进入  /home/lnmp1.6,执行./pureftpd.sh 
+	2.使用lnmp ftp {add|del|show|list}进行管理
+
+
+I.为laravel安装oci8(针对oracle10g)扩展支持
+
+	1.准备安装文件，
+		oracle-instantclient-basic-10.2.0.5-1.x86_64.rpm
+		oracle-instantclient-devel-10.2.0.5-1.x86_64.rpm
+		go-pear.phar
+		oci8-2.2.0.tgz
+
+	2.安装ORACLE即时客户端：会自动生成/usr/lib/oracle/10.2.0.5/client64/lib/目录
+		rpm -ivh oracle-instantclient-basic-10.2.0.5-1.x86_64.rpm
+		rpm -ivh oracle-instantclient-devel-10.2.0.5-1.x86_64.rpm
+
+	3.修改配置文件
+		3.1 echo "/usr/lib/oracle/10.2.0.5/client64/lib/" > /etc/ld.so.conf.d/oracle_client.conf
+			/sbin/ldconfig
+
+		3.2 vi /etc/profile，加入:
+			export ORACLE_HOME=/usr/lib/oracle/10.2.0.5/client64
+			export PATH=$PATH:$ORACLE_HOME/bin
+			export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/lib/oracle/10.2.0.5/client64/lib
+
+		3.3 让其立即生效的命令：source /etc/profile
+
+
+	4.安装PHP-OCI8扩展
+		
+		4.1 安装pecl：wget http://pear.php.net/go-pear.phar -O go-pear.php，（或者执行php go-pear.phar，默认回车）
+				pecl channel-update pecl.php.net
+				pecl search oci8，查看oci8版本
+				pecl install oci8，询问instantclient位置时，输入instantclient,/usr/lib/oracle/10.2.0.5/client64/lib
+
+		4.2 或者下载oci8-2.2.0.tgz文件（推荐方法）
+				tar -zxvf oci8-2.2.0.tgz
+				进oci8-2.2.0目录后
+				phpize
+				./configure --with-php-config=/usr/local/php/bin/php-config --with-oci8=shared,instantclient,/usr/lib/oracle/10.2.0.5/client64/lib
+				make
+				make install
+				成功后自动生成，/usr/local/php/lib/php/extensions/no-debug-non-zts-20160303/
+
+	5. 修改/usr/local/php/etc/php.ini
+		加入extension=oci8.so
+		php -m |grep oci8，查看是否已包含
+
+    6.安装yajra/laravel-oci8
+		进入网站目录，composer require yajra/laravel-oci8:"5.8.*"
+	
+	7.在config/app.php的providers key中添加：Yajra\Oci8\Oci8ServiceProvider::class,
+
+	8.在config/database.php中添加：
+	'oracle' => [
+	            'driver' => 'oracle',
+	            'host' => '192.168.1.13',
+	            'port' => '1521',
+	            'database' => 'jydb',
+	            'service_name' => '',
+	            'username' => '****',
+	            'password' => '****',
+	            'charset' => 'utf8',
+	            'prefix' => '',
+	      ]
+	修改：'default' => env('DB_CONNECTION', 'oracle'),
+
+
+	9.  .env中修改
+			DB_CONNECTION=oracle
+			DB_HOST=192.168.1.13
+			DB_PORT=1521
+			DB_DATABASE=jydb
+			DB_USERNAME=7777
+			DB_PASSWORD=secret
+
+
+
+
+附：LNMP状态管理命令：
+
+LNMP 1.2+状态管理: lnmp {start|stop|reload|restart|kill|status}
+LNMP 1.2+各个程序状态管理: lnmp {nginx|mysql|mariadb|php-fpm|pureftpd} {start|stop|reload|restart|kill|status}
+Nginx状态管理：/etc/init.d/nginx {start|stop|reload|restart}
+MySQL状态管理：/etc/init.d/mysql {start|stop|restart|reload|force-reload|status}
+Memcached状态管理：/etc/init.d/memcached {start|stop|restart}
+PHP-FPM状态管理：/etc/init.d/php-fpm {start|stop|quit|restart|reload|logrotate}
+PureFTPd状态管理： /etc/init.d/pureftpd {start|stop|restart|kill|status}
+ProFTPd状态管理： /etc/init.d/proftpd {start|stop|restart|reload}
+Redis状态管理： /etc/init.d/redis {start|stop|restart|kill}
+多PHP版本状态管理：/etc/init.d/php-fpm5.5 {start|stop|quit|restart|reload|logrotate} 前面5.5为对应的PHP版本，其他版本自行替换。
