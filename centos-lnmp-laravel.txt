@@ -147,3 +147,6 @@ PureFTPd状态管理： /etc/init.d/pureftpd {start|stop|restart|kill|status}
 ProFTPd状态管理： /etc/init.d/proftpd {start|stop|restart|reload}
 Redis状态管理： /etc/init.d/redis {start|stop|restart|kill}
 多PHP版本状态管理：/etc/init.d/php-fpm5.5 {start|stop|quit|restart|reload|logrotate} 前面5.5为对应的PHP版本，其他版本自行替换。
+
+
+/usr/local/php/lib/php/extensions/no-debug-non-zts-20160303/
