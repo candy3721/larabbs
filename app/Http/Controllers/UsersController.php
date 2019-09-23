@@ -11,6 +11,11 @@ class UsersController extends Controller
 {
     
 
+    public function __construct()
+    {
+        $this->middleware('auth',['except' => ['show']]);
+    }
+
     /**
      * Display the specified resource.
      *
@@ -30,6 +35,7 @@ class UsersController extends Controller
      */
     public function edit(User $user)
     {
+        $this ->authorize('update',$user);
         return view('users.edit',compact('user'));
     }
 
@@ -43,7 +49,8 @@ class UsersController extends Controller
     public function update(UserRequest $request, User $user,ImageUploadHandler $uploader)
     {
 
-       $date = $request->all();
+        $this ->authorize('update',$user);
+        $date = $request->all();
        if ($request->avatar) {
         $request = $uploader->save($request->avatar,'avatars',$user->id,416);
             if ($request) {
