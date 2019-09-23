@@ -45,7 +45,7 @@ class UsersController extends Controller
 
        $date = $request->all();
        if ($request->avatar) {
-        $request = $uploader->save($request->avatar,'avatars',$user->id);
+        $request = $uploader->save($request->avatar,'avatars',$user->id,416);
             if ($request) {
                 $data['avatar'] = $request['path'];
             }
