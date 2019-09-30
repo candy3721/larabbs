@@ -1,3 +1,11 @@
+homestead中php版本切换到7.1：
+sudo update-alternatives --set php /usr/bin/php7.1
+
+创建root账户密码:
+sudo passwd root
+
+
+
 1. 准备工作，先安装RPM
 root@ubuntu:/opt# apt-get install rpm
 
@@ -49,7 +57,8 @@ make install)
 
 
 
-/etc/php/7.2/cli/php.ini 和/etc/php/7.2/fpm/php.ini中加入
+vi /etc/php/7.2/cli/php.ini 和
+vi /etc/php/7.2/fpm/php.ini 中加入
 (centos lnmp在/usr/local/php/etc/php.ini)
 extension=oci8.so
 
